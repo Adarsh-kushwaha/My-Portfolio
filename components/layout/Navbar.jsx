@@ -19,12 +19,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className='flex flex-row justify-start items-center'>
                     <div className='px-4' onClick={() => { setDarkMode(!darkMode) }}>
                         {darkMode ?
-                            <div className='flex flex-row bg-[#353945] p-1.5 rounded-full justify-between items-center w-[70px] cursor-pointer'>
+                            <div className='flex flex-row bg-[#11191b] p-1.5 rounded-full justify-between items-center w-[70px] cursor-pointer'>
                                 <MdDarkMode size={20} className="fill-[#808191]" />
-                                <BsFillCircleFill className="fill-blue-500" />
+                                <BsFillCircleFill className="fill-green-500" />
                             </div>
-                            : <div className='flex flex-row bg-[#353945] p-1.5 rounded-full justify-between items-center w-[70px] cursor-pointer'>
-                                <BsFillCircleFill className="fill-blue-500" />
+                            : <div className='flex flex-row bg-[#11191b] p-1.5 rounded-full justify-between items-center w-[70px] cursor-pointer'>
+                                <BsFillCircleFill className="fill-green-500" />
                                 <MdLightMode size={20} className="fill-[#808191]" />
                             </div>}
                     </div>
