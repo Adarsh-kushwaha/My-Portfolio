@@ -1,4 +1,4 @@
-import Bio from "../components/home/bio";
+import Bio from "../components/home/Bio";
 import { getPosts } from "../services";
 
 const HomePage = () => {
