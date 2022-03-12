@@ -11,12 +11,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     return (
         <div className='container flex flex-row items-center justify-between py-4 w-full mb-10'>
             <div className=''>
-                <h2 className='font-bold text-lg hover:underline'><Link href="/">Adarsh.</Link></h2>
+                <h2 className='font-bold text-lg hover:underline'><Link href="/"><a>Adarsh.</a></Link></h2>
             </div>
             <div className='flex flex-row justify-between items-center gap-6'>
                 <div className='font-bold text-xl cursor-pointer flex flex-row items-center justify-start gap-4'>
-                    <p className='text-[16px] font-medium hover:text-green-400 hover:underline'><Link href="/blogs">Blogs</Link></p>
-                    <p className='text-[16px] font-medium hover:text-green-400 hover:underline'><Link href="/projects">Projects</Link></p>
+                    <p className='text-[16px] font-medium hover:text-green-400 hover:underline'><Link href="/blogs"><a>Blogs</a></Link></p>
+                    <p className='text-[16px] font-medium hover:text-green-400 hover:underline'><Link href="/projects"><a>Projects</a></Link></p>
                 </div>
                 <div className='flex flex-row justify-start items-center'>
                     <div onClick={() => { setDarkMode(!darkMode) }}>
