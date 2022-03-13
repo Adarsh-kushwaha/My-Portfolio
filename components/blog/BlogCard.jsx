@@ -3,7 +3,7 @@ import React from 'react';
 import Link from "next/link";
 
 const BlogCard = ({ blog }) => {
-  console.log(blog)
+  
   return (
     <Link href={`/blogs/${blog.slug}`}>
       <a>

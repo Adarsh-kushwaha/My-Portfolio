@@ -36,6 +36,38 @@ export const getPosts = async () => {
 
 }
 
+export const getProjects = async () => {
+  const query = gql`
+  query projectQuery {
+    projectsConnection {
+      edges {
+        node {
+          gitHubLink
+          completedAt
+          createdAt
+          projectLink
+          slug
+          summary
+          techUsed
+          title
+          categories {
+            name
+          }
+          icon {
+            url
+          }
+          featuredProject
+          started
+        }
+      }
+    }
+  }
+  `;
+
+  const data = await request(endpoint, query);
+  return data.projectsConnection.edges;
+
+}
 
 export const getPostDetails = async (slug) => {
   const query = gql`    
@@ -68,3 +100,53 @@ export const getPostDetails = async (slug) => {
 
 }
 
+
+//fetching featured projects
+
+export const getFeaturedProjects = async () => {
+  const query = gql`
+    query getFeaturedProjects() {
+      projects(where: {featuredProject: true}) {
+        completedAt
+        projectLink
+        summary
+        started
+        techUsed
+        title
+        icon {
+          url
+        }
+        featuredProject
+        slug
+      }
+    }   
+  `;
+
+  const result = await request(endpoint, query);
+
+  return result.projects;
+};
+
+//fetching featured blog
+
+export const getFeaturedBlogs = async () => {
+  const query = gql`    
+    query getFeaturedBlogs(){
+      posts(where : {featured:true}){
+        createdAt
+        excerpt
+        featured
+        slug
+        title
+        author {
+          name
+        }
+      }
+    }
+    `;
+
+
+  const data = await request(endpoint, query);
+  return data.post
+
+}

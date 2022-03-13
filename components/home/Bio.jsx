@@ -3,7 +3,8 @@ import React from 'react';
 import { FiArrowUpRight } from "react-icons/fi"
 import Link from 'next/link';
 
-const Bio = () => {
+const Bio = ({ fProjects }) => {
+    console.log(fProjects)
     return (
         <div className='md:flex md:flex-row md:items-center md:justify-center w-full gap-8'>
             <div className='grid grid-cols gap-3 '>
@@ -32,12 +33,10 @@ const Bio = () => {
 
                 </div>
             </div>
-            <figure className=' p-8 md:p-0 w-[100%] overflow-hidden relative'>
-                <Image src="https://i.gifer.com/QDyD.gif" alt="profile" width={1000} height={1000} className='rounded-full' />
-                <div className='md:hidden p-2 px-4 rounded-full border-[1px] dark:border-[#b8b8b8ce] text-sm dark:bg-gray-700 bg-green-100 text-center mx-2 flex flex-row items-center justify-center gap-2 absolute top-[80%] left-[10%] right-[10%]'>
-                    <div>📗</div>
-                    <div>Learning about blockchain</div>
-                </div>
+
+            <figure className='p-8 md:p-0 w-[100%]'>
+                <Image src="https://i.gifer.com/QDyD.gif" alt="profile" width={1000} height={1000} className='rounded-full flex-wrap shadow-xl' />
+                
             </figure>
 
         </div>

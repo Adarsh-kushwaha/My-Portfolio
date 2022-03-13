@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 
     return (
         <div className={darkMode ? "dark" : " "}>
-            <div className='dark:bg-[#1A282B] bg-green-50 dark:text-white text-gray-800 h-screen'>
+            <div className='dark:bg-[#1A282B] bg-green-50 dark:text-white text-gray-800 h-[100%] py-8'>
                 <main className="md:w-[50%] md:m-auto md:px-2 px-4">
                     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                     {children}
