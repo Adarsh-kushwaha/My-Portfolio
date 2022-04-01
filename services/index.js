@@ -1,6 +1,6 @@
 import { request, gql } from "graphql-request";
 
-const endpoint = process.env.PORTFOLIO_API_ENDPOINT;
+const endpoint = process.env.PORTFOLIO_API_ENDPOINT
 
 export const getPosts = async () => {
   const query = gql`    
