@@ -1,8 +1,9 @@
 import Bio from "../components/home/Bio";
+import BlogCard from "../components/Blog/BlogCard";
 import FeaturedBlog from "../components/home/FeaturedBlog";
 import FeaturedProjects from "../components/home/FeaturedProjects";
 import { getFeaturedProjects, getFeaturedBlogs, getPosts } from "../services";
-import BlogCard from "../components/Blog/BlogCard";
+
 
 const HomePage = ({ projects, blogs }) => {
   return (
