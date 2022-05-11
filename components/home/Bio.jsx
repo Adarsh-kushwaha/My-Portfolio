@@ -4,7 +4,6 @@ import { FiArrowUpRight } from "react-icons/fi"
 import Link from 'next/link';
 
 const Bio = ({ fProjects }) => {
-    console.log(fProjects)
     return (
         <div className='md:flex md:flex-row md:items-center md:justify-center w-full gap-8'>
             <div className='grid grid-cols gap-3 '>
@@ -36,7 +35,7 @@ const Bio = ({ fProjects }) => {
 
             <figure className='p-8 md:p-0 w-[100%]'>
                 <Image src="https://i.gifer.com/QDyD.gif" alt="profile" width={1000} height={1000} className='rounded-full flex-wrap shadow-xl' />
-                
+
             </figure>
 
         </div>

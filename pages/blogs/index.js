@@ -6,7 +6,7 @@ const DUMMY_POST = [{ title: "Blog 1 Heading", excerpt: "this id blog one excerp
 { title: "Blog 2 Heading", excerpt: "this id blog one excerpt to get idea about blog is about what?" }]
 
 const Blog = ({ blogs }) => {
-    return <>
+    return (
         <div>
             <div className="text-xl font-bold py-2">Blogs.</div>
             <div className="text-md my-2">Web development, with a focus on the React ecosystem. I’ve written a total of 6 articles</div>
@@ -35,11 +35,12 @@ const Blog = ({ blogs }) => {
                 </div>
             </div>
             <div className="grid grid-cols-1 gap-6 mt-14 p-1">
-                {blogs?.map((blog, index) => <BlogCard key={index} blog={blog.node}  />
+                {blogs?.map((blog, index) => <BlogCard key={index} blog={blog.node} />
                 )}
             </div>
         </div>
-    </>
+    )
+
 }
 
 
@@ -47,7 +48,7 @@ export async function getStaticProps() {
     const blogs = (await getPosts() || DUMMY_POST);
 
     return {
-        props:{
+        props: {
             blogs
         }
     }
