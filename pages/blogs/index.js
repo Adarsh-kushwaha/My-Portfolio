@@ -1,7 +1,6 @@
 import BlogCard from "../../components/blog/BlogCard";
 import { getPosts } from "../../services";
 
-
 const DUMMY_POST = [{ title: "Blog 1 Heading", excerpt: "this id blog one excerpt to get idea about blog is about what?" },
 { title: "Blog 2 Heading", excerpt: "this id blog one excerpt to get idea about blog is about what?" }]
 
@@ -35,7 +34,7 @@ const Blog = ({ blogs }) => {
                 </div>
             </div>
             <div className="grid grid-cols-1 gap-6 mt-14 p-1">
-                {blogs?.map((blog, index) => <BlogCard key={index} blog={blog.node} />
+                {blogs?.reverse().map((blog, index) => <BlogCard key={index} blog={blog.node} />
                 )}
             </div>
         </div>

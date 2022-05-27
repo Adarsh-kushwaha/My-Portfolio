@@ -5,7 +5,7 @@ import { FiArrowUpRight } from "react-icons/fi"
 
 const FeaturedProjects = ({ fProjects }) => {
   return (
-    <div className='p-4'>
+    <div className='py-4'>
       {
         fProjects.map((project) =>
           <div className='p-4 dark:bg-[#1d6e609c] bg-[#08e4a291] rounded-lg w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 mt-6' key={project.title}>

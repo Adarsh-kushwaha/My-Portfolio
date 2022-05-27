@@ -1,19 +1,21 @@
+import ProjectCard from "../../components/project/ProjectCard";
 import { getProjects } from "../../services";
 
-const projects = ({ project }) => {
+const projects = ({ projects }) => {
+    
     return (
-        <>
-            Currently Site Is In Development Phase !
-        </>
+        <div>
+            <ProjectCard projects={projects} />
+        </div>
     )
 }
 
 export async function getStaticProps() {
-    const project = (await getProjects() || []);
+    const projects = (await getProjects() || []);
 
     return {
         props: {
-            project
+            projects
         }
     }
 }
