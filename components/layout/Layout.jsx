@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../footer/Footer';
 import Navbar from './Navbar';
 
 
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
                     {children}
                 </main>
             </div>
+            <Footer />
         </div>
     )
 }

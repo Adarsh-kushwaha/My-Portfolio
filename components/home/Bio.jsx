@@ -6,10 +6,10 @@ import profile from "../../assets/adarsh.png"
 
 const Bio = ({ fProjects }) => {
     return (
-        <div className='md:flex md:flex-row md:items-center md:justify-center w-full gap-8'>
+        <div className='md:flex md:flex-row md:items-start items-center md:justify-center w-full gap-8'>
             <div className='grid grid-cols gap-3 '>
-                <div className='md:text-3xl text-xl'><span className='font-bold'>Hi!</span>👋<span className='font-bold'> I am</span> <span className='text-2xl md:text-4xl px-1 dark:text-green-400 text-green-500 font-extrabold'>Adarsh Kushwaha</span></div>
-                <div className='text-md'> I am <span className='text-green-500 font-bold' >Frontend Web Developer</span> 💻 and have handfull experience in Backend develpment, currently living in India. <br />I started my career as a 👨‍🏫teacher and then switched to full time web developer. I do <span className='text-green-500 font-bold'>Freelance, Make Videos, Write Blogs</span> and also looking for <span className='font-extrabold underline'>good opportunity.</span> Currently Learning <span className='font-bold text-green-500'>Blockchain Development</span> and working on my new course ✌️.
+                <div className='md:text-3xl text-lg'><span className='font-bold'>Hi!</span>👋<span className='font-bold'> I am</span> <span className='text-xl md:text-3xl px-1 dark:text-green-400 text-green-500 font-extrabold'>Adarsh Kushwaha</span></div>
+                <div className='text-md'> I am <span className='text-green-500 font-bold' >Frontend Web Developer</span> 💻 and have handfull experience in Backend develpment. I started my career as a 👨‍🏫teacher and then switched to full time web developer. <div className='pt-1'>I do <span className='text-green-500 font-bold'>Freelance, Make Videos, Write Blogs</span> and also looking for <span className='font-extrabold underline'>good opportunity.</span> Currently Learning <span className='font-bold text-green-500'>Web 3.0</span> and working on my new course ✌️.</div>
                 </div>
                 <div className='flex flex-row gap-4 justify-start items-center my-6'>
                     <div className=' flex flex-row gap-2 items-center justify-center text-blue-400 hover:underline font-bold'>

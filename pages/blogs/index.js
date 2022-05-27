@@ -7,8 +7,10 @@ const DUMMY_POST = [{ title: "Blog 1 Heading", excerpt: "this id blog one excerp
 const Blog = ({ blogs }) => {
     return (
         <div>
-            <div className="text-xl font-bold py-2">Blogs.</div>
-            <div className="text-md my-2">Web development, with a focus on the React ecosystem. I’ve written a total of 6 articles</div>
+            <div className="mb-10">
+                <h2 className="text-2xl my-10 font-bold border-b-4 inline  border-gray-800 dark:border-white">All Blogs</h2>
+            </div>
+            <div className="text-md my-2">Web development, with a focus on the React ecosystem. I’ve written a total of {blogs.length} articles</div>
             <div className="flex justify-center">
                 <div className="my-3 w-full">
                     <input
@@ -33,7 +35,7 @@ const Blog = ({ blogs }) => {
                     />
                 </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 mt-14 p-1">
+            <div className="grid grid-cols-1 gap-6 mt-5 p-1">
                 {blogs?.reverse().map((blog, index) => <BlogCard key={index} blog={blog.node} />
                 )}
             </div>

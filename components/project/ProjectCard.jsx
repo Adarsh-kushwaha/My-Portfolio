@@ -8,9 +8,9 @@ const ProjectCard = ({ projects }) => {
     return (
         <div className='py-4'>
             {
-                projects?.map((project) =>
+                projects?.reverse().map((project) =>
                     <div className='p-4 dark:bg-[#1d6e609c] bg-[#08e4a291] rounded-lg w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 mt-6' key={project.node.title}>
-                        <div className='flex flex-row items-center justify-start gap-6 '>
+                        <div className='md:grid md:grid-cols-[1fr,4fr] flex flex-row items-center justify-start gap-6 '>
                             <div className='hidden md:block'><Image src={project.node.icon.url} alt="icon" width={150} height={150} /></div>
                             <div>
                                 <div className='flex flex-row items-center justify-between w-full'>
