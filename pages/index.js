@@ -1,5 +1,5 @@
 import Bio from "../components/home/Bio";
-import BlogCard from "../components/Blog/BlogCard";
+import BlogCard from "../components/blog/BlogCard";
 // import FeaturedBlog from "../components/home/FeaturedBlog";
 import FeaturedProjects from "../components/home/FeaturedProjects";
 import { getFeaturedProjects, getFeaturedBlogs, getPosts } from "../services";
