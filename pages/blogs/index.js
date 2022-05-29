@@ -1,8 +1,6 @@
 import BlogCard from "../../components/blog/BlogCard";
 import { getPosts } from "../../services";
 
-const DUMMY_POST = [{ title: "Blog 1 Heading", excerpt: "this id blog one excerpt to get idea about blog is about what?" },
-{ title: "Blog 2 Heading", excerpt: "this id blog one excerpt to get idea about blog is about what?" }]
 
 const Blog = ({ blogs }) => {
     return (

@@ -9,7 +9,7 @@ const ProjectCard = ({ projects }) => {
         <div className='py-4'>
             {
                 projects?.reverse().map((project) =>
-                    <div className='p-4 dark:bg-[#1d6e609c] bg-[#08e4a291] rounded-lg w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 mt-6' key={project.node.title}>
+                    <div className='p-4 dark:bg-teal-900 bg-[#08e4a291] rounded-lg w-full transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 mt-6' key={project.node.title}>
                         <div className='md:grid md:grid-cols-[1fr,4fr] flex flex-row items-center justify-start gap-6 '>
                             <div className='hidden md:block'><Image src={project.node.icon.url} alt="icon" width={150} height={150} /></div>
                             <div>
@@ -20,7 +20,7 @@ const ProjectCard = ({ projects }) => {
                                         <div className='flex flex-row gap-2'>{project.node.techUsed.map((tech) => <p className='bg-green-500 rounded-lg px-2 py-1 text-sm' key={tech}>{tech}</p>)}</div>
                                     </div>
                                     <Link href={project.node.projectLink}>
-                                        <a href={project.node.projectLink} className='hover:underline flex flex-row items-center justify-center text-blue-600 dark:text-blue-400 '><p>View</p> <FiArrowUpRight size={22} /></a>
+                                        <a href={project.node.projectLink} className='hover:underline flex flex-row items-center justify-center text-green-700 dark:text-teal-400 '><p>View</p> <FiArrowUpRight size={22} /></a>
                                     </Link>
                                 </div>
                                 <p>{project.node.summary}</p>
